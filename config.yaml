@@ -1,0 +1,43 @@
+# config.yaml
+
+# Model Configuration
+model:
+  hidden_size: 64  # Increased for more capacity
+  dtype: float32
+  # *add more config params for your model if you need them*
+
+training:
+  batch_size: 64  # Reduced to help with gradient updates
+  learning_rate: !!float 4e-5  # More conservative learning rate
+  num_epochs: 10  # Increased for longer training
+  num_trials_per_epoch: 500
+  val_frequency: 10
+  validation_trials: 500
+  optimizer:
+    type: 'adamw'
+    weight_decay: !!float 1e-4  # Increased regularization
+
+# Task Configuration
+task:
+  dt: 10  # Keep 50hz sampling rate
+  timing:
+    fixation: 100
+    eel1_observe: 5000  # Doubled observation time
+    iti1: 100
+    eel2_observe: 5000  # Doubled observation time
+    iti2: 100
+    choice: 100
+  
+  # Environment Parameters
+  environment:
+    eel:
+      speed: 0.02
+      size: 0.1
+      wiggle: 0.01
+    
+    fish:
+      count: 12
+      size: 0.05
+      speed:
+        slow: 0.002
+        fast: 0.05
