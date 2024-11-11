@@ -112,8 +112,8 @@ cd GBE4017_41
 
 2. Create and activate the conda environment from the environment.yml file:
 ```bash
-# Create new environment from environment.yml
-conda env create -f environment.yml
+# Create new environment 
+conda create --name competency_task
 
 # Activate the environment
 conda activate competency_task  # or whatever name is specified in environment.yml
