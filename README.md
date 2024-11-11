@@ -104,8 +104,8 @@ This project implements a competency task environment using neural networks to t
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd <repository-name>
+git clone https://github.com/Y-Lab-SKKU/GBE4017_41
+cd GBE4017_41
 ```
 
 2. Create and activate the conda environment from the environment.yml file:
