@@ -7,6 +7,8 @@ This assignment tasks you with implementing a Recurrent Neural Network (RNN) to 
 - Understand and implement core RNN architectures
 - Analyze model learning and performance
 - Gain hands-on experience with PyTorch
+- Analyze behavior using Bayesian inference and explore hidden layers through dimensionality reduction methods covered in class
+
 
 ### Your Tasks
 
